@@ -2,6 +2,10 @@
 #include <stdlib.h>
 
 int main(void) {
+    char name[20];
+    printf("Who are you?\n> ");
+    scanf("%s",name);
+    printf("Hello, %s!\n",name);
     int h = 0;
     int t = 0;
     srand(time(NULL));
