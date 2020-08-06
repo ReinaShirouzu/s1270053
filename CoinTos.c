@@ -2,6 +2,10 @@
 #include <stdlib.h>
 
 int main(void) {
+    char name[20];
+    printf("Who are you?\n> ");
+    scanf("%s",name);
+    printf("Hello, %s!\n",name);
     int h = 0;
     int t = 0;
     srand(time(NULL));
@@ -20,9 +24,9 @@ int main(void) {
     }
     printf("Heads: %d, Tails: %d\n",h,t);
     if (h > t)
-        printf("You won\n");
+        printf("%s won\n",name);
     else
-        printf("You lost\n");
+        printf("%s lost\n",name);
     
     return 0;
 }
